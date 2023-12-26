@@ -13,6 +13,7 @@ public class RemoveStar {
 		
 		
 		for(int i =0;i<n;i++) {
+			
 			al.add(s.charAt(i));
 				
 		}
