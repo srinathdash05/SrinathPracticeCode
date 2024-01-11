@@ -80,4 +80,26 @@ public class Anagram {
 		
 		
 	}
+	public static boolean anagram3(String s1, String s2) {
+		s1=s1.toLowerCase();
+		s2=s2.toLowerCase();
+		s1=s1.replaceAll(" ", "");
+		s2=s2.replaceAll(" ", "");
+		
+		int n1 = s1.length();
+		int n2= s2.length();
+		int i;
+		
+		if(n1!=n2) {
+			
+			return false;
+		}
+		for(i =0;i<n1;i++) {
+			if(s1.charAt(i)!=s2.charAt(i)) {
+				return false;
+			}
+			
+		}
+		return true;
+	}
 }

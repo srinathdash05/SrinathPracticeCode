@@ -1,5 +1,6 @@
 package srinath.srinath;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -20,7 +21,7 @@ public class App
     			WebDriver driver = new ChromeDriver();
     	    	
     	        String baseUrl = "http://automationpractice.com";	   
-    	        WebDriverWait wait =  new WebDriverWait(driver, 20); 	
+    	        WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(10)); 	
    	       
     	        driver.navigate().to(baseUrl);
     	        driver.manage().window().maximize();
