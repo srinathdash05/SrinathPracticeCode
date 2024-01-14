@@ -22,18 +22,15 @@ public class DiagonalDifference {
 				if(i==j) {
 					sum1+=arr[i][j];
 				}
+				
+				if(i+j==n-1) {
+					sum2+=arr[i][j];
 			}
 		}
-		//System.out.println(sum1);
-		//sum2+=arr[0][n]+arr[n][0];
-		for(int i =0;i<n;i++) {
-			for(int j=n-1;j>=0;j--) {
-				if((i+j)==n-1)
-					sum2+=arr[i][j];
-					//System.out.println(arr[i][j]);
+		
 				
 			}
-		}
+		
 		//System.out.println(sum2);
 		
 			System.out.println(difference=sum1-sum2);

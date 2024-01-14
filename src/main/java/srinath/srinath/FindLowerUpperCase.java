@@ -6,7 +6,7 @@ public class FindLowerUpperCase {
 	
 		String s ="SrinathDash09";
 		int l = s.length();
-		System.out.println(l);
+		//System.out.println(l);
 	    int lower = 0 ;  
 	    int upper =0 ;
 	    int count=0;

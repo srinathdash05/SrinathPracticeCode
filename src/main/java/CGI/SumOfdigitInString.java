@@ -8,6 +8,7 @@ public class SumOfdigitInString {
 		String s[] = { "7sad9", "hgds99", "hfd78" };
 		String a= "1abcd4hg6fd8";
 		sumOfDigitsInString(a);
+		//sumOfdigitsInArrayofStrings(s);
 		
 
 	}
@@ -48,4 +49,6 @@ public class SumOfdigitInString {
 		System.out.println(sum);
 	}
 	
+	
+
 }

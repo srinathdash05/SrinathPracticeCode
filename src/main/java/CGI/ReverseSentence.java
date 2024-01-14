@@ -17,7 +17,7 @@ public static void reverseSentence(String s) {
 	{
 		Rev = Rev +s.charAt(i);
 		}
-		System.out.println(Rev);
+		System.out.println("The reversed sentence is: "+Rev);
 	}
 
 public static void reversreWord(String s) {
@@ -29,7 +29,7 @@ public static void reversreWord(String s) {
 	for(int i = s1.length-1; i>=0;i--) {
 		Rev+= s1[i]+" ";
 	}
-	System.out.println(Rev);
+	System.out.println("The reversed word in sentence is: "+Rev);
 }
 }
 	
