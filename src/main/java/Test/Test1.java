@@ -13,6 +13,13 @@ public class Test1 {
 		
 
 		}
+		
+		int a = 18;
+		long b=a;
+		
+		long c=10;
+		int d=(int) c;
+		
 
 }
 }

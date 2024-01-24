@@ -24,8 +24,19 @@ public class ListToArray {
 		System.out.println(arr[i]);
 		}
 		//System.out.println(arr.length);
-		
+		arrayToArrayList(arr);
 
+	}
+	
+	public static void arrayToArrayList(int arr[]) {
+		ArrayList <Integer> al = new ArrayList<>();
+		
+		for(int i=0;i<arr.length;i++) {
+			
+			al.add(arr[i]);
+			System.out.println(al);
+			
+		}
 	}
 
 }

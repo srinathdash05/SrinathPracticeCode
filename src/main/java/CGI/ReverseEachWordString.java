@@ -11,7 +11,7 @@ public class ReverseEachWordString {
 			for(int j=s1[i].length()-1; j>=0;j--) {
 				System.out.print(s1[i].charAt(j));
 			}
-			System.out.println(" ");
+			System.out.print(" ");
 		}
 
 	}
