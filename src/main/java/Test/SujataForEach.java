@@ -19,7 +19,7 @@ public class SujataForEach {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		Thread.sleep(2000);
-		streamLink(driver);
+		parallelStreamLink(driver);
 		
 		
 		driver.close();
@@ -47,6 +47,14 @@ public static  void lambdaExpressionLink(WebDriver driver) {
 	
 	links.forEach(link -> System.out.println(link.getAttribute("href")));
 	
+	 
+ }
+
+public static  void parallelStreamLink(WebDriver driver) {
+	
+	List<WebElement> links = driver.findElements(By.tagName("a"));
+	
+	links.parallelStream().forEach(link->System.out.println(link.getAttribute("href")+" :- Thread Name:-  " +Thread.currentThread().getName()));	
 	 
  }
 }
