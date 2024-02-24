@@ -7,7 +7,7 @@ import java.util.Iterator;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-  
+
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -19,21 +19,20 @@ public class ReadExcelSheet {
 		XSSFWorkbook wb = new XSSFWorkbook(Fs);
 		XSSFSheet sheet = wb.getSheet("Sheet1");
 		Iterator<Row> rowIterator = sheet.iterator();
-		while(rowIterator.hasNext()) {
+		while (rowIterator.hasNext()) {
 			Row row = rowIterator.next();
-			
+
 			Iterator<Cell> cellIterator = row.cellIterator();
-			while(cellIterator.hasNext()) {
+			while (cellIterator.hasNext()) {
 				Cell cell = cellIterator.next();
-				switch(cell.getCellType()) {
+				switch (cell.getCellType()) {
 				case STRING:
 					System.out.print(cell.getStringCellValue());
 					break;
-					
-				
+
 				default:
 					break;
-					
+
 				}
 				System.out.print("|");
 			}
@@ -43,6 +42,5 @@ public class ReadExcelSheet {
 		Fs.close();
 
 	}
-	
-	
+
 }
