@@ -8,7 +8,8 @@ public class Anagram {
 	public static void main(String[] args) {
 		String s1 = "Neat";
 		String s2 = "A net";
-		if(Anagram.anagramChar(s1, s2))
+		anagramWithoutRepeatingword(s1,s2);
+		if(anagramChar(s1, s2))
 			System.out.println("The strings are Anagram");
 		else
 			System.out.println("Strings are not anagram");
@@ -19,7 +20,7 @@ public class Anagram {
 		s1 = s1.toLowerCase();
 		s2 = s2.toLowerCase();
 		s1 = s1.replaceAll(" ", "");
-		s2 = s2.replaceFirst(" ", "");
+		s2 = s2.replaceAll(" ", "");
 		// System.out.println(s1);
 
 		int n1 = s1.length();
@@ -40,7 +41,7 @@ public class Anagram {
 
 		} else
 			System.out.println("not anagram");
-		System.out.println(c);
+		//System.out.println(c);
 		if (c == n1)
 			System.out.println("The strings are anagram");
 		else
@@ -52,7 +53,7 @@ public class Anagram {
 		s1 = s1.toLowerCase();
 		s2 = s2.toLowerCase();
 		s1 = s1.replaceAll(" ", "");
-		s2 = s2.replaceFirst(" ", "");
+		s2 = s2.replaceAll(" ", "");
 		int n1 = s1.length();
 		int n2 = s2.length();
 		if(n1!=n2) {

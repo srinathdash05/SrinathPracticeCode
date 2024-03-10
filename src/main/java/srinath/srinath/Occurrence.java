@@ -8,8 +8,8 @@ public class Occurrence {
 		// TODO Auto-generated method stub
 		String str = "capgemini";
 		//Occurrence or = new Occurrence();
-		//Occurrence.occurr(str);
-		Occurrence.Hoccurr(str);
+		Occurrence.occurr(str);
+		//Occurrence.Hoccurr(str);
 		
 
 	}
@@ -31,7 +31,7 @@ public class Occurrence {
 					}
 				}
 			}
-			if (count>=1)
+			if (count>1)
 				System.out.println("The character is: " +str.charAt(i) + " the count is " +count);
 		}
 		
