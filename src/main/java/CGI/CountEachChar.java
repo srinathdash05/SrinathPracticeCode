@@ -8,6 +8,7 @@ public class CountEachChar {
 		
 		String s = "Automation Testing";
 		CountEachChar.CharOccur1(s);
+		//charOccur(s);
 
 	}
 

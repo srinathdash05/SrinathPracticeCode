@@ -12,7 +12,7 @@ public class ReverseSentence {
 public static void reverseSentence(String s) {
 	int n = s.length();
 	String Rev = "";
-	//String [] s1 = s.split(" ");
+	
 	for(int i=s.length()-1; i>=0; i--) 
 	{
 		Rev = Rev +s.charAt(i);
