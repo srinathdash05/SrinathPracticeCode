@@ -13,7 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WindowHandle {
 
-	@SuppressWarnings({ "unlikely-arg-type", "deprecation" })
+	@SuppressWarnings({ "deprecation" })
 	public static void main(String[] args) throws Exception {
 
 		WebDriver driver;

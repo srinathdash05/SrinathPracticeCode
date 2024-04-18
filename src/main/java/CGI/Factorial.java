@@ -14,6 +14,8 @@ public class Factorial {
 		}
 		System.out.println("factorial of " +num + " is " +factorial);
 		
+		sc.close();
+		
 	}
 
 }

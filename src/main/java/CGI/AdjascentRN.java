@@ -18,6 +18,7 @@ public class AdjascentRN {
 				System.out.println(arr[i]);
 			}
 		}
+		sc.close();
 
 	}
 

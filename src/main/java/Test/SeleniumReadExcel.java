@@ -1,8 +1,6 @@
 package Test;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -43,7 +41,7 @@ public class SeleniumReadExcel {
 				//System.out.println(testData[i-1][j]);
 			}
 		}
-		
+		wb.close();
 		return testData;
 	}
 

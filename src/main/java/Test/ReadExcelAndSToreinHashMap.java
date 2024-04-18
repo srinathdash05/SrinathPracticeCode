@@ -1,8 +1,6 @@
 package Test;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
@@ -24,6 +22,7 @@ public class ReadExcelAndSToreinHashMap {
 			String key = sheet.getRow(i).getCell(0).getStringCellValue();
 			String value = sheet.getRow(i).getCell(1).getStringCellValue();
 			map.put(key, value);
+
 		}
 
 		for (Entry<String, String> entry : map.entrySet()) {
@@ -31,7 +30,7 @@ public class ReadExcelAndSToreinHashMap {
 			System.out.println("The key is: " + entry.getKey() + " the value is: " + entry.getValue());
 
 		}
-
+			wb.close();
 	}
 
 }
