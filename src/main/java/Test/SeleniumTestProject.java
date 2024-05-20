@@ -21,7 +21,7 @@ public class SeleniumTestProject {
 		int count = 0;
 		String[] itemName = { "Cucumber", "Brocolli", "Brinjal", "Beans" };
 		WebDriver driver;
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().clearDriverCache().setup();
 		driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/");
 		driver.manage().window().maximize();

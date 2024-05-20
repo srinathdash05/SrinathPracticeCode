@@ -7,7 +7,7 @@ public class Anagram {
 	public static void main(String[] args) {
 		String s1 = "Neat";
 		String s2 = "A net";
-		anagramWithoutRepeatingword(s1, s2);
+		//anagramWithoutRepeatingword(s1, s2);
 		if (anagramChar(s1, s2))
 			System.out.println("The strings are Anagram");
 		else
@@ -64,10 +64,9 @@ public class Anagram {
 		char[] ch2 = new char[n2];
 		for (int i = 0; i < n1; i++) {
 			ch1[i] = s1.charAt(i);
-		}
-		for (int i = 0; i < n2; i++) {
 			ch2[i] = s2.charAt(i);
 		}
+
 		Arrays.sort(ch1);
 		Arrays.sort(ch2);
 

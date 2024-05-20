@@ -1,5 +1,7 @@
 package Test;
 
+import java.util.Arrays;
+
 public class SecondLargestInArray {
 
 	public static void main(String[] args) {
@@ -14,7 +16,8 @@ public class SecondLargestInArray {
 		}
 		//System.out.println("The largest number is " + temp);
 		sort(arr);
-
+		
+		
 	}
 
 	public static void sort(int arr[]) {

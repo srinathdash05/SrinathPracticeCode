@@ -41,6 +41,7 @@ public class WindowHandle {
 		}
 		driver.switchTo().window(parent);
 		Set<String> childWindows1 = driver.getWindowHandles();
+		
 		List<String> allchildWindows = new ArrayList<String>(childWindows1);
 		System.out.println(allchildWindows.size());
 		if (allchildWindows.size() >= 3) {
