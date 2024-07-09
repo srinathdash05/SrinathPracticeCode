@@ -13,7 +13,7 @@ public class ReverseString {
 			rev = rev+str.charAt(i);
 			
 		}
-		// TODO Auto-generated method stub
+		
 System.out.println(rev);
 	}
 

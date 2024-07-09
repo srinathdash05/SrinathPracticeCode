@@ -17,6 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AmazonFlatDeal {
 
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		WebDriver driver;
