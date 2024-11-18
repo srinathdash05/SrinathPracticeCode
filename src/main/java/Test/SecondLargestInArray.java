@@ -7,15 +7,19 @@ public class SecondLargestInArray {
 	public static void main(String[] args) {
 
 		int arr[] = { 2, 4, 5, 1, 2, 90, 67, 19 };
-		int temp = arr[0];
+		Arrays.sort(arr);	
+		
 		int n = arr.length;
+		System.out.println(arr[n-2]);
+		int temp = arr[0];		
+		//int n = arr.length;
 		for (int i = 0; i < n; i++) {
 			if (arr[i] > temp) {
 				temp = arr[i];
 			}
 		}
-		//System.out.println("The largest number is " + temp);
-		sort(arr);
+		System.out.println("The largest number is " + temp);
+		//sort(arr);
 		
 		
 	}

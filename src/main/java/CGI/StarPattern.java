@@ -7,8 +7,9 @@ public class StarPattern {
 
 		int n = 5;
 		//RightTriangle(n);
-		invertedTriangle(n);
+		//invertedTriangle(n);
 		//pyramidStarPattern(n);
+		squarePattern(n);
 
 	}
 
